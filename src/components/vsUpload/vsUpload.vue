@@ -141,11 +141,11 @@ export default {
         // preview.src = reader.result;
         this.arrayFiles.push({src:reader.result})
         // this.vsFileList.push({name:file.name})
-        console.log(file);
+        console.log('edit test file' + file);
 
         filesx.push({file:file})
-        console.log(filesx);
-        this.$emit('update:vsFileList', filesx)
+        console.log('edit test filesx' + filesx);
+        this.$emit('update:vsFileList', file)
       }
 
       if (file) {
